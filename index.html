@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankush Katoch — Web Designer & UI/UX</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-096NP51JHX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-096NP51JHX');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">AK</a>
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#creative">Creative</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Ottawa, ON — Web Designer &amp; UI/UX</p>
+      <h1 class="hero__title reveal">
+        <span>Ankush</span>
+        <em>Katoch</em>
+      </h1>
+      <p class="hero__sub reveal">
+        10+ years crafting interactive digital experiences,<br>
+        multimedia storytelling, and award-winning web design.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#work" class="btn btn--primary">View Work</a>
+        <a href="https://behance.net/anshnav" target="_blank" rel="noopener" class="btn btn--ghost">Behance</a>
+      </div>
+    </div>
+    <div class="hero__photo reveal">
+      <img src="images/profile-photo.png" alt="Ankush Katoch" />
+      <div class="hero__photo-accent"></div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- AWARD BANNER -->
+  <div class="award-banner reveal">
+    <div class="award-banner__inner">
+      <span class="award-banner__icon">&#9670;</span>
+      <p>Silver — Best Website &nbsp;|&nbsp; Canadian Online Publishing Awards &nbsp;|&nbsp; Invictus Games 2025</p>
+      <span class="award-banner__icon">&#9670;</span>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-header reveal">
+      <span class="section-label">Selected Work</span>
+      <h2>Interactive &amp; Digital Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Featured -->
+      <article class="project project--featured reveal" data-index="01">
+        <a href="project.html#invictus-games-2025" class="project__link">
+          <div class="project__media">
+            <img src="images/Invictus-games.jpeg" alt="Invictus Games 2025" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__meta">
+              <span class="project__num">01</span>
+              <span class="project__award">&#9670; COPA Silver</span>
+            </div>
+            <h3 class="project__title">Invictus Games 2025</h3>
+            <p class="project__desc">Award-winning interactive feature — Silver, Best Website at the Canadian Online Publishing Awards.</p>
+            <span class="project__tag">Interactive Feature</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project reveal" data-index="02">
+        <a href="project.html#legion-100th-anniversary" class="project__link">
+          <div class="project__media">
+            <img src="images/RCL.jpeg" alt="Royal Canadian Legion — 100th Anniversary" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">02</span>
+            <h3 class="project__title">Royal Canadian Legion — 100th Anniversary</h3>
+            <p class="project__desc">Interactive centennial experience celebrating 100 years of the Royal Canadian Legion.</p>
+            <span class="project__tag">Interactive Experience</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project reveal" data-index="03">
+        <a href="project.html#the-scheldt-campaign" class="project__link">
+          <div class="project__media">
+            <img src="images/scheldt.jpeg" alt="The Scheldt Campaign" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">03</span>
+            <h3 class="project__title">The Scheldt Campaign</h3>
+            <p class="project__desc">Interactive historical feature detailing the Battle of the Scheldt during WWII.</p>
+            <span class="project__tag">Multimedia Storytelling</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project reveal" data-index="04">
+        <a href="project.html#rcaf-100" class="project__link">
+          <div class="project__media">
+            <img src="images/RCAF.jpeg" alt="RCAF — 100 Years" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">04</span>
+            <h3 class="project__title">RCAF — 100 Years</h3>
+            <p class="project__desc">Interactive centennial feature celebrating 100 years of the Royal Canadian Air Force.</p>
+            <span class="project__tag">Interactive Feature</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project reveal" data-index="05">
+        <a href="project.html#those-damn-women" class="project__link">
+          <div class="project__media">
+            <img src="images/those-damn-women.jpeg" alt="Those Damn Women" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">05</span>
+            <h3 class="project__title">Those Damn Women</h3>
+            <p class="project__desc">Digital storytelling project highlighting the contributions of women during wartime.</p>
+            <span class="project__tag">Digital Storytelling</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project reveal" data-index="06">
+        <a href="project.html#afghanistan" class="project__link">
+          <div class="project__media">
+            <img src="images/Afghanistan-cover.jpeg" alt="Afghanistan — Canada's Longest War" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">06</span>
+            <h3 class="project__title">Afghanistan — Canada's Longest War</h3>
+            <p class="project__desc">Interactive long-form multimedia feature on Canada's mission in Afghanistan.</p>
+            <span class="project__tag">Long-form Feature</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 7 -->
+      <article class="project reveal" data-index="07">
+        <a href="project.html#operation-husky" class="project__link">
+          <div class="project__media">
+            <img src="images/sicily.jpeg" alt="Operation Husky — Sicily" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">07</span>
+            <h3 class="project__title">Operation Husky — Sicily</h3>
+            <p class="project__desc">Interactive feature exploring Operation Husky and the Allied invasion of Sicily.</p>
+            <span class="project__tag">Interactive Feature</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 8 -->
+      <article class="project reveal" data-index="08">
+        <a href="project.html#korea-the-war-without-end" class="project__link">
+          <div class="project__media">
+            <img src="images/korea.jpeg" alt="Korea — The War Without End" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">08</span>
+            <h3 class="project__title">Korea — The War Without End</h3>
+            <p class="project__desc">Multimedia storytelling feature on the Korean War and its lasting impact.</p>
+            <span class="project__tag">Multimedia Storytelling</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 9 -->
+      <article class="project reveal" data-index="09">
+        <a href="project.html#canada-and-the-great-war" class="project__link">
+          <div class="project__media">
+            <img src="images/Canada-the-Great-War.jpeg" alt="Canada & The Great War" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">09</span>
+            <h3 class="project__title">Canada &amp; The Great War</h3>
+            <p class="project__desc">Interactive feature covering Canada's role in the liberation campaigns of WWI.</p>
+            <span class="project__tag">Interactive Feature</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 10 -->
+      <article class="project reveal" data-index="10">
+        <a href="project.html#liberation-of-netherlands" class="project__link">
+          <div class="project__media">
+            <img src="images/netherlands.jpeg" alt="Liberation of the Netherlands" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__meta">
+              <span class="project__num">10</span>
+              <span class="project__award">&#9670; COPA Gold 2020</span>
+            </div>
+            <h3 class="project__title">Liberation of the Netherlands</h3>
+            <p class="project__desc">Interactive storytelling project on the liberation of the Netherlands during WWII.</p>
+            <span class="project__tag">Digital Storytelling</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 11 -->
+      <article class="project reveal" data-index="11">
+        <a href="project.html#the-october-crisis" class="project__link">
+          <div class="project__media">
+            <img src="images/october-crisis.jpeg" alt="The October Crisis" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div class="project__meta">
+              <span class="project__num">11</span>
+              <span class="project__award">&#9670; COPA Silver 2020</span>
+            </div>
+            <h3 class="project__title">The October Crisis</h3>
+            <p class="project__desc">Historical interactive feature examining Canada's defining political crisis.</p>
+            <span class="project__tag">Interactive Feature</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 12 -->
+      <article class="project reveal" data-index="12">
+        <a href="project.html#legion-magazine" class="project__link">
+          <div class="project__media">
+            <img src="images/LM.jpg" alt="Legion Magazine" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">12</span>
+            <h3 class="project__title">Legion Magazine</h3>
+            <p class="project__desc">Corporate website featuring articles, multimedia stories, and digital magazine content.</p>
+            <span class="project__tag">Corporate Website</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Project 13 -->
+      <article class="project reveal" data-index="13">
+        <a href="project.html#canadas-ultimate-story" class="project__link">
+          <div class="project__media">
+            <img src="images/CUS.jpg" alt="Canada's Ultimate Story" class="project__image" />
+            <div class="project__overlay">
+              <span class="project__visit">View Case Study &#8599;</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <span class="project__num">13</span>
+            <h3 class="project__title">Canada's Ultimate Story</h3>
+            <p class="project__desc">Standalone magazine website for Canada's Ultimate Story, published by Canvet Publications Ltd.</p>
+            <span class="project__tag">Corporate Website</span>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CREATIVE PROJECTS -->
+  <section class="creative" id="creative">
+    <div class="section-header reveal">
+      <span class="section-label">Creative Projects</span>
+      <h2>Beyond the Browser</h2>
+    </div>
+
+    <div class="creative__inner">
+
+      <!-- Left: info -->
+      <div class="creative__text reveal">
+        <h3 class="creative__title">Kush &amp; The Food Power Adventures</h3>
+        <p class="creative__role">Creator &amp; Producer &nbsp;·&nbsp; 2025 – Present</p>
+        <p class="creative__desc">An animated children's educational series promoting healthy nutrition through storytelling. From concept to screen — scripts, storyboards, character design, visual direction, and end-to-end production using AI-assisted creative workflows.</p>
+        <ul class="creative__tools">
+          <li>Original IP &amp; Concept Development</li>
+          <li>Scriptwriting &amp; Storyboarding</li>
+          <li>Character &amp; Visual Design</li>
+          <li>AI-assisted Image Generation &amp; Video Editing</li>
+          <li>End-to-end Production Pipeline</li>
+        </ul>
+        <a href="https://www.youtube.com/@kushfoodadventures" target="_blank" rel="noopener" class="btn btn--primary creative__cta">
+          Watch on YouTube &#8599;
+        </a>
+      </div>
+
+      <!-- Right: episode grid -->
+      <div class="creative__episodes reveal">
+        <a href="https://www.youtube.com/@kushfoodadventures" target="_blank" rel="noopener" class="episode">
+          <img src="images/episode-2-thumbnail.jpg" alt="Episode 2" />
+          <div class="episode__overlay"><span>Watch &#9654;</span></div>
+        </a>
+        <a href="https://www.youtube.com/@kushfoodadventures" target="_blank" rel="noopener" class="episode">
+          <img src="images/episode-6-thumb.jpg" alt="Episode 6" />
+          <div class="episode__overlay"><span>Watch &#9654;</span></div>
+        </a>
+        <a href="https://www.youtube.com/@kushfoodadventures" target="_blank" rel="noopener" class="episode">
+          <img src="images/episode-9-thumbnail.jpg" alt="Episode 9" />
+          <div class="episode__overlay"><span>Watch &#9654;</span></div>
+        </a>
+        <a href="https://www.youtube.com/@kushfoodadventures" target="_blank" rel="noopener" class="episode">
+          <img src="images/episode-10-thumbnail.jpg" alt="Episode 10" />
+          <div class="episode__overlay"><span>Watch &#9654;</span></div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__text reveal">
+        <span class="section-label">About</span>
+        <h2>Design rooted in<br><em>story and purpose.</em></h2>
+        <p>I'm a Creative Content Specialist, Web Administrator, and UI/UX Designer with over a decade of experience building digital experiences that inform, engage, and inspire. My work spans interactive storytelling, multimedia campaigns, and editorial web design.</p>
+        <p>Currently at <strong>Canvet Publications</strong>, I design and develop immersive web features for Legion Magazine — including projects recognized at the <strong>Canadian Online Publishing Awards</strong>. I also taught multimedia production and AI-assisted design workflows as an Adjunct Professor at <strong>Lambton College</strong>.</p>
+        <a href="https://behance.net/anshnav" target="_blank" rel="noopener" class="btn btn--primary">View Behance</a>
+      </div>
+      <div class="about__skills reveal">
+        <div class="skills-group">
+          <h4>Design &amp; Creative</h4>
+          <ul>
+            <li>UI/UX Design</li>
+            <li>Figma — Wireframes &amp; High-Fidelity Design</li>
+            <li>Interactive Storytelling</li>
+            <li>Adobe Creative Cloud</li>
+            <li>Motion &amp; Video (After Effects, Premiere)</li>
+            <li>Generative AI Workflows</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h4>Development</h4>
+          <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>PHP</li>
+            <li>WordPress &amp; WooCommerce</li>
+            <li>Claude Code</li>
+            <li>Accessibility (WCAG / AODA)</li>
+            <li>CMS Publishing &amp; QA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__inner reveal">
+      <span class="section-label">Contact</span>
+      <h2>Let's work<br><em>together.</em></h2>
+      <p>Available for freelance projects, collaborations, and full-time opportunities.</p>
+      <div class="contact__links">
+        <a href="mailto:anshnav@gmail.com" class="contact__link">anshnav@gmail.com</a>
+        <a href="tel:6138692368" class="contact__link">613-869-2368</a>
+        <a href="https://behance.net/anshnav" target="_blank" rel="noopener" class="contact__link">Behance &#8599;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Ankush Katoch. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project — Ankush Katoch</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-096NP51JHX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-096NP51JHX');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/project.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">AK</a>
+    <ul class="nav__links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT PAGE -->
+  <main class="pj" id="projectPage">
+
+    <!-- Back link -->
+    <div class="pj__back reveal">
+      <a href="index.html#work" class="pj__back-link">&#8592; All Projects</a>
+    </div>
+
+    <!-- Hero -->
+    <header class="pj__hero">
+      <div class="pj__hero-media reveal" id="pjMedia">
+        <!-- filled by JS -->
+      </div>
+      <div class="pj__hero-text">
+        <div class="pj__meta reveal" id="pjMeta"><!-- filled by JS --></div>
+        <h1 class="pj__title reveal" id="pjTitle"><!-- filled by JS --></h1>
+        <div class="pj__award reveal" id="pjAward"><!-- filled by JS --></div>
+      </div>
+    </header>
+
+    <!-- Body -->
+    <div class="pj__body">
+
+      <!-- Left: description -->
+      <div class="pj__main">
+        <p class="pj__description reveal" id="pjDescription"><!-- filled by JS --></p>
+        <div class="pj__divider"></div>
+        <p class="pj__overview reveal" id="pjOverview"><!-- filled by JS --></p>
+
+        <div class="pj__highlights reveal" id="pjHighlights">
+          <h3>Key Highlights</h3>
+          <ul id="pjHighlightsList"><!-- filled by JS --></ul>
+        </div>
+
+        <div class="pj__cta reveal" id="pjCta">
+          <!-- filled by JS -->
+        </div>
+      </div>
+
+      <!-- Right: project info sidebar -->
+      <aside class="pj__sidebar reveal">
+        <div class="pj__info-group" id="pjClient"><!-- filled by JS --></div>
+        <div class="pj__info-group" id="pjRole"><!-- filled by JS --></div>
+        <div class="pj__info-group" id="pjYear"><!-- filled by JS --></div>
+        <div class="pj__info-group" id="pjTools"><!-- filled by JS --></div>
+      </aside>
+
+    </div>
+
+    <!-- Next project -->
+    <div class="pj__next reveal" id="pjNext"><!-- filled by JS --></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Ankush Katoch. All rights reserved.</p>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/project.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
