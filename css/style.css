@@ -356,6 +356,124 @@ img { display: block; max-width: 100%; }
   opacity: 0.6;
 }
 
+/* =============================================
+   FEATURED CASE STUDY
+   ============================================= */
+.featured-case {
+  padding: var(--section-pad) 0;
+  background:
+    linear-gradient(135deg, rgba(237, 233, 224, 0.95), rgba(245, 241, 234, 0.72));
+}
+
+.featured-case__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: clamp(2.5rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.featured-case__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: var(--bg-2);
+  box-shadow: 0 28px 70px rgba(26, 24, 20, 0.12);
+}
+
+.featured-case__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.92) contrast(1.02);
+  transition: transform 0.55s ease, filter 0.55s ease;
+}
+
+.featured-case__media:hover img {
+  transform: scale(1.035);
+  filter: saturate(1) contrast(1.05);
+}
+
+.featured-case__content {
+  max-width: 520px;
+}
+
+.featured-case__award {
+  margin-bottom: 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.featured-case h2 {
+  margin-bottom: 1.25rem;
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 5vw, 4.75rem);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--text);
+}
+
+.featured-case__content > p:not(.featured-case__award) {
+  color: var(--text-dim);
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+.featured-case__facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0 0;
+}
+
+.featured-case__facts div {
+  background: rgba(245, 241, 234, 0.72);
+  padding: 1rem;
+}
+
+.featured-case__facts dt {
+  margin-bottom: 0.35rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.featured-case__facts dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.featured-case__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.featured-case__link {
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.15rem;
+}
+
+.featured-case__link:hover {
+  color: var(--accent);
+}
+
 
 /* =============================================
    WORK / PROJECTS
@@ -816,6 +934,14 @@ img { display: block; max-width: 100%; }
    RESPONSIVE
    ============================================= */
 @media (max-width: 900px) {
+  .featured-case__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-case__content {
+    max-width: 680px;
+  }
+
   .project:not(.project--featured) {
     grid-column: span 12;
   }
@@ -890,6 +1016,10 @@ img { display: block; max-width: 100%; }
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+
+  .featured-case__facts {
+    grid-template-columns: 1fr;
   }
 }
 

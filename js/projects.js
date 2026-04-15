@@ -1,5 +1,198 @@
 const projects = [
   {
+    id: "last-post-search-redesign",
+    title: "Last Post Search Experience Redesign",
+    category: "UX & Frontend Modernization",
+    tags: ["UX Design", "Frontend", "WordPress", "PHP", "JavaScript"],
+    image: "images/Search-personal.jpeg",
+    year: "2025",
+    client: "Legion Magazine",
+    role: "UI/UX Designer & Frontend Developer",
+    url: "https://legionmagazine.com/last-post/",
+    gradient: "linear-gradient(135deg, #102033 0%, #263d57 52%, #b89b5e 100%)",
+    description: "A redesign and modernization of the Last Post memorial archive search experience, improving how users search, scan, and view commemorative records.",
+    overview: "The Last Post archive is a memorial database that allows users to search records of veterans, Royal Canadian Legion members, and related commemorative entries. This project focused on redesigning the search experience from initial query to record detail while preserving the respectful tone expected of a memorial platform.",
+    highlights: [
+      "Restructured search into clear Personal Details, Military Service, and Legion Membership pathways",
+      "Reduced cognitive load with minimal required input and progressive disclosure",
+      "Replaced dense table results with readable record cards",
+      "Redesigned record detail pages with stronger hierarchy and memorial tone",
+      "Implemented print and save-as-PDF refinements for individual records",
+      "Resolved browser caching issues with asset versioning"
+    ],
+    tools: ["HTML", "CSS", "JavaScript", "WordPress / PHP", "Responsive Design", "Accessibility", "Print CSS"],
+    caseStudy: {
+      deck: "Legion Magazine — Memorial Archive UX & Frontend Modernization",
+      images: [
+        {
+          src: "images/Before-lastpost.jpeg",
+          alt: "Original Last Post archive search interface before the redesign",
+          caption: "Before: overloaded search flow and dated visual structure."
+        },
+        {
+          src: "images/Search-personal.jpeg",
+          alt: "Redesigned Last Post personal details search tab",
+          caption: "After: focused Personal Details search with a clearer starting point."
+        },
+        {
+          src: "images/search-military.jpeg",
+          alt: "Redesigned Last Post military service search tab",
+          caption: "Military Service tab separating service-related search context."
+        },
+        {
+          src: "images/search-legionmember.jpeg",
+          alt: "Redesigned Last Post Legion membership search tab",
+          caption: "Legion Membership tab with location-driven search fields."
+        },
+        {
+          src: "images/Search-results.jpeg",
+          alt: "Card-based Last Post search results interface",
+          caption: "Card-based results designed for faster scanning and comparison."
+        },
+        {
+          src: "images/result-detail.jpeg",
+          alt: "Redesigned Last Post record detail page",
+          caption: "Record detail page with stronger hierarchy and print-ready structure."
+        }
+      ],
+      sections: [
+        {
+          eyebrow: "Problem",
+          title: "The original experience was functional, but created friction at every step.",
+          body: [
+            "Search was structured as a combined, step-based flow with too many fields presented at once. Users struggled to understand how to begin or refine a search, and results were displayed in dense, table-like layouts that were difficult to scan.",
+            "Record pages lacked hierarchy and emotional presence. The visual design felt outdated and inconsistent with the significance of the memorial content."
+          ]
+        },
+        {
+          eyebrow: "Goals",
+          title: "Make search clearer, faster, and more respectful.",
+          bullets: [
+            "Make the search process intuitive for first-time users",
+            "Break complex search inputs into clearer, focused categories",
+            "Improve scanability of search results",
+            "Elevate the visual tone to reflect a respectful memorial experience",
+            "Redesign record detail pages for clarity and structure",
+            "Enable print and save-as-PDF functionality for records",
+            "Ensure consistent experience by resolving browser caching issues"
+          ]
+        },
+        {
+          eyebrow: "Research & Discovery",
+          title: "Users thought in contexts, not in advanced search modes.",
+          body: [
+            "Internal review and user feedback showed that most searches started with minimal information, often just a last name. Too many visible fields created hesitation and confusion.",
+            "An early attempt to unify all search fields into a single flow proved counterproductive. Testing showed that separation and clarity outperformed consolidation."
+          ]
+        },
+        {
+          eyebrow: "UX Strategy",
+          title: "Shift from a form-heavy workflow to a guided search system.",
+          bullets: [
+            "Break search into clear categories",
+            "Reduce cognitive load by limiting visible inputs",
+            "Use progressive disclosure to reveal complexity only when needed",
+            "Prioritize readability and hierarchy in results and records",
+            "Design for both quick lookup and deeper exploration"
+          ]
+        },
+        {
+          eyebrow: "Key Design Decisions",
+          title: "The redesign focused on clarity, context, and respectful presentation.",
+          decisions: [
+            {
+              title: "Tabbed Search System",
+              text: "Replaced the combined search wizard with three focused entry points: Personal Details, Military Service, and Legion Membership."
+            },
+            {
+              title: "Minimal Required Input",
+              text: "Every form includes First Name and Last Name, but only Last Name is required so users can search with partial information."
+            },
+            {
+              title: "Progressive Location Fields",
+              text: "Country, province, and city fields reveal progressively, while Legion Branch options populate dynamically based on location."
+            },
+            {
+              title: "Card-Based Search Results",
+              text: "Dense tables were replaced with structured record cards that surface names and key details first."
+            },
+            {
+              title: "Redesigned Record Detail Pages",
+              text: "Record pages now use a prominent nameplate header and structured sections for personal, military, and membership details."
+            },
+            {
+              title: "Print / Save as PDF",
+              text: "A dedicated print-friendly layout supports saving and sharing memorial records."
+            }
+          ]
+        },
+        {
+          eyebrow: "UI Design System",
+          title: "Restrained, archival, and respectful.",
+          body: [
+            "The visual direction uses serif display typography for names and memorial titles, clean sans-serif UI text for metadata, navy and slate tones, muted blues, a soft parchment background, and subtle gold accents.",
+            "Clean cards, subtle separators, and strong vertical rhythm reinforce the archival tone while improving usability."
+          ]
+        },
+        {
+          eyebrow: "Implementation",
+          title: "Modern frontend patterns inside a legacy WordPress/PHP system.",
+          bullets: [
+            "Rebuilt frontend structure within a legacy WordPress/PHP plugin",
+            "Introduced modular form patterns for each search category",
+            "Implemented progressive disclosure using JavaScript",
+            "Created reusable card components for results",
+            "Designed and implemented a print-specific stylesheet",
+            "Added cache-busting for CSS and JS assets to prevent stale UI issues"
+          ]
+        },
+        {
+          eyebrow: "Challenges & Iterations",
+          title: "The strongest solution came from simplifying, not combining.",
+          decisions: [
+            {
+              title: "Legacy Constraints",
+              text: "The system was tightly coupled with backend query logic, so frontend patterns had to map cleanly to existing query modes."
+            },
+            {
+              title: "Unified Search vs. Split Search",
+              text: "The initial unified search approach created confusion, so the experience shifted to clearer tabbed categories."
+            },
+            {
+              title: "Browser Caching Issues",
+              text: "Returning users saw stale layouts due to cached CSS, which was resolved with cache-busting versioning."
+            },
+            {
+              title: "Print Layout Bugs",
+              text: "Hidden elements affected print output, so the print action was refined to generate a cloned, record-only print view."
+            }
+          ]
+        },
+        {
+          eyebrow: "Results",
+          title: "A clearer mental model and a more dignified record experience.",
+          bullets: [
+            "More intuitive search experience for first-time users",
+            "Improved engagement with search results",
+            "Faster ability to locate relevant records",
+            "Cleaner, more respectful presentation of memorial data",
+            "Reduced user confusion and support friction",
+            "Improved readability across devices",
+            "Reliable, consistent experience for returning visitors"
+          ]
+        },
+        {
+          eyebrow: "What I Learned",
+          title: "Clarity, tone, and technical reality have to work together.",
+          body: [
+            "This project reinforced that clarity beats completeness. Separating complexity is often more effective than unifying it, especially when users arrive with partial information.",
+            "It also emphasized that frontend decisions must respect backend realities in legacy systems, and that print experiences still matter for archival and commemorative content."
+          ]
+        }
+      ]
+    }
+  },
+  {
     id: "invictus-games-2025",
     title: "Invictus Games 2025",
     category: "Interactive Feature",
@@ -297,6 +490,126 @@ const projects = [
       "Cross-device optimisation and performance monitoring",
       "Launched and maintains all interactive storytelling features"
     ],
-    tools: ["Figma", "WordPress", "WooCommerce", "PHP", "HTML / CSS / JavaScript", "Adobe Creative Cloud", "WCAG / AODA"]
+    tools: ["Figma", "WordPress", "WooCommerce", "PHP", "HTML / CSS / JavaScript", "Adobe Creative Cloud", "WCAG / AODA"],
+    caseStudy: {
+      deck: "Final Figma page designs for a refreshed Legion Magazine website system.",
+      galleryStyle: "figma",
+      images: [
+        {
+          src: "images/LM/home.jpeg",
+          alt: "Legion Magazine homepage final Figma design",
+          caption: "Homepage design establishing the editorial hierarchy, feature areas, and publication rhythm.",
+          layout: "feature"
+        },
+        {
+          src: "images/LM/home-mobile.jpeg",
+          alt: "Legion Magazine homepage mobile final Figma design",
+          caption: "Mobile homepage flow designed as a long-form editorial reading path.",
+          layout: "phone"
+        },
+        {
+          src: "images/LM/header-design.jpg",
+          alt: "Legion Magazine header and navigation design exploration",
+          caption: "Header system and navigation treatment for the site-wide experience.",
+          layout: "wide"
+        },
+        {
+          src: "images/LM/postpage.jpeg",
+          alt: "Legion Magazine article page final Figma design",
+          caption: "Article page design focused on readable long-form content, media placement, and related pathways.",
+          layout: "wide"
+        },
+        {
+          src: "images/LM/postpage-mobile.jpeg",
+          alt: "Legion Magazine article page mobile final Figma design",
+          caption: "Mobile article layout preserving hierarchy and reading comfort on narrow screens.",
+          layout: "phone"
+        },
+        {
+          src: "images/LM/CategoryArchive.jpeg",
+          alt: "Legion Magazine category archive final Figma design",
+          caption: "Category archive layout for browsing article collections and recurring editorial themes.",
+          layout: "wide"
+        },
+        {
+          src: "images/LM/search.jpeg",
+          alt: "Legion Magazine search results final Figma design",
+          caption: "Search results page designed for quick scanning across editorial content.",
+          layout: "wide"
+        },
+        {
+          src: "images/LM/Newsletter.jpeg",
+          alt: "Legion Magazine newsletter page final Figma design",
+          caption: "Newsletter signup page with a focused conversion path and publication context.",
+          layout: "wide"
+        },
+        {
+          src: "images/LM/Newsletter-mobile.jpeg",
+          alt: "Legion Magazine newsletter page mobile final Figma design",
+          caption: "Mobile newsletter layout with simplified hierarchy and compact form placement.",
+          layout: "phone"
+        },
+        {
+          src: "images/LM/Newsletter-mobile-1.jpeg",
+          alt: "Alternate Legion Magazine newsletter mobile final Figma design",
+          caption: "Extended mobile newsletter state showing the full responsive flow.",
+          layout: "phone"
+        },
+        {
+          src: "images/LM/404.jpeg",
+          alt: "Legion Magazine 404 page final Figma design",
+          caption: "404 page design keeping the error state aligned with the editorial brand.",
+          layout: "wide"
+        },
+        {
+          src: "images/LM/404-mobile.jpeg",
+          alt: "Legion Magazine 404 page mobile final Figma design",
+          caption: "Mobile 404 treatment for a consistent responsive error state.",
+          layout: "phone"
+        },
+        {
+          src: "images/LM/404-mobile-1.jpeg",
+          alt: "Alternate Legion Magazine 404 page mobile final Figma design",
+          caption: "Alternate mobile 404 view showing the full page composition.",
+          layout: "phone"
+        },
+        {
+          src: "images/LM/Text%20styles.jpg",
+          alt: "Legion Magazine typography styles from Figma",
+          caption: "Typography styles documenting the visual language used across the redesign.",
+          layout: "wide"
+        }
+      ],
+      sections: [
+        {
+          eyebrow: "Design System",
+          title: "A Figma-led refresh for a publication site with many content types.",
+          body: [
+            "The designs define a stronger editorial system for Legion Magazine, covering the homepage, article pages, archive views, search, newsletter signup, navigation, typography, and error states.",
+            "The goal was to create a cleaner and more flexible visual language that could support daily publishing, long-form storytelling, subscriptions, and recurring site utilities."
+          ]
+        },
+        {
+          eyebrow: "Page Coverage",
+          title: "The showcase presents the site as a connected system, not isolated screens.",
+          bullets: [
+            "Homepage and mobile homepage",
+            "Article detail page and mobile article page",
+            "Category archive and search results",
+            "Newsletter signup flows",
+            "404 error states",
+            "Header and typography design system references"
+          ]
+        },
+        {
+          eyebrow: "Design Focus",
+          title: "Editorial hierarchy, flexible browsing, and responsive continuity.",
+          body: [
+            "The final screens balance publication identity with practical CMS needs. Large story moments, compact article lists, search utility, and mobile reading patterns are treated as parts of the same system.",
+            "The mobile designs are included alongside desktop screens to show how the Figma direction adapts across real editorial workflows."
+          ]
+        }
+      ]
+    }
   }
 ];
