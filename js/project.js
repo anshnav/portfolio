@@ -103,7 +103,22 @@ function renderCaseStudy(project) {
   }
 
   target.hidden = false;
-  const { deck, images = [], sections = [] } = project.caseStudy;
+  const { deck, images = [], sections = [], slideshow = [] } = project.caseStudy;
+
+  const slideshowMarkup = slideshow.length ? `
+    <div class="case-slideshow" aria-label="Project photo gallery" data-slideshow>
+      <div class="case-slideshow__track" data-slideshow-track>
+        ${slideshow.map(img => `
+          <div class="case-slideshow__slide">
+            <img src="${img.src}" alt="${img.alt}" loading="lazy">
+          </div>`).join('')}
+      </div>
+      <button class="case-slideshow__nav case-slideshow__nav--prev" type="button" aria-label="Previous photo">&#8592;</button>
+      <button class="case-slideshow__nav case-slideshow__nav--next" type="button" aria-label="Next photo">&#8594;</button>
+      <div class="case-slideshow__dots" data-slideshow-dots>
+        ${slideshow.map((_, i) => `<button class="case-slideshow__dot${i === 0 ? ' case-slideshow__dot--active' : ''}" type="button" data-dot="${i}" aria-label="Photo ${i + 1}"></button>`).join('')}
+      </div>
+    </div>` : '';
 
   const galleryMarkup = images.length ? `
     <div class="case-gallery ${project.caseStudy.galleryStyle ? `case-gallery--${project.caseStudy.galleryStyle}` : ''}" aria-label="Case study supporting images">
@@ -148,9 +163,11 @@ function renderCaseStudy(project) {
       <span class="section-label">Expanded Case Study</span>
       ${deck ? `<p>${deck}</p>` : ''}
     </div>
+    ${slideshowMarkup}
     ${galleryMarkup}
     ${sectionsMarkup}`;
 
+  initCaseSlideshow(target);
   initCaseGalleryLightbox(target, images);
 }
 
@@ -226,6 +243,37 @@ function initCaseGalleryLightbox(scope, images) {
     if (event.key === '-') setZoom(zoom - 0.25);
     if (event.key === '0') setZoom(1);
   };
+}
+
+function initCaseSlideshow(scope) {
+  const el = scope.querySelector('[data-slideshow]');
+  if (!el) return;
+
+  const track = el.querySelector('[data-slideshow-track]');
+  const dots  = el.querySelectorAll('[data-dot]');
+  const prev  = el.querySelector('.case-slideshow__nav--prev');
+  const next  = el.querySelector('.case-slideshow__nav--next');
+  const total = track.children.length;
+  let current = 0;
+  let timer;
+
+  const goTo = index => {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('case-slideshow__dot--active', i === current));
+  };
+
+  const startAuto = () => { timer = setInterval(() => goTo(current + 1), 4000); };
+  const stopAuto  = () => clearInterval(timer);
+
+  prev.addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+  next.addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+  dots.forEach(dot => dot.addEventListener('click', () => { stopAuto(); goTo(Number(dot.dataset.dot)); startAuto(); }));
+
+  el.addEventListener('mouseenter', stopAuto);
+  el.addEventListener('mouseleave', startAuto);
+
+  startAuto();
 }
 
 function getCaseLightbox() {

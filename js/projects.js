@@ -446,6 +446,85 @@ const projects = [
     tools: ["Figma", "HTML / CSS / JavaScript", "Adobe Photoshop", "Adobe InDesign", "CMS Publishing"]
   },
   {
+    id: "lapis-bard-branding-ecommerce",
+    title: "Lapis Bard Branding & Ecommerce Store",
+    category: "Branding & E-Commerce",
+    tags: ["Branding", "E-Commerce", "UI Design", "Photography Direction"],
+    client: "Lapis Bard",
+    role: "Brand Designer & Creative Lead",
+    image: "images/lapisbard.jpeg",
+    gradient: "linear-gradient(135deg, #0a0814 0%, #1c1830 50%, #2a1f10 100%)",
+    description: "Brand identity, ecommerce design, and creative direction for Lapis Bard — establishing the visual language and online presence for a men's premium accessories brand from the ground up.",
+    overview: "Lapis Bard is a premium men's accessories brand. The project involved working closely with brand owners and agencies to define the brand's identity, tone, and visual language — then translating that into a considered ecommerce experience. Product and lifestyle photoshoots were co-ordinated to ensure the imagery matched the brand's premium positioning, and the ecommerce store was designed and developed in close collaboration with the development team.",
+    highlights: [
+      "Worked with brand owners and agencies to establish Lapis Bard as a men's premium accessories brand",
+      "Co-ordinated product and lifestyle photoshoots to build the brand's visual library",
+      "Worked with photographers and models to define and capture the brand language",
+      "Conceptualized the ecommerce store design from initial brief through to final UI",
+      "Led development handoff and collaborated with developers to build the store",
+      "Designed web graphics and marketing assets for the storefront"
+    ],
+    tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator", "Photography Direction", "Brand Strategy", "UI Design"],
+    caseStudy: {
+      deck: "Brand identity, photographic direction, and ecommerce design for a men's premium accessories brand.",
+      slideshow: [
+        { src: "images/LB-1.jpg", alt: "Lapis Bard brand and product photography" },
+        { src: "images/LB-2.jpg", alt: "Lapis Bard brand and product photography" },
+        { src: "images/LB-3.jpg", alt: "Lapis Bard brand and product photography" },
+        { src: "images/LB-4.jpg", alt: "Lapis Bard brand and product photography" },
+        { src: "images/LB-5.jpg", alt: "Lapis Bard brand and product photography" },
+        { src: "images/LB-6.jpg", alt: "Lapis Bard brand and product photography" },
+        { src: "images/LB-7.jpg", alt: "Lapis Bard brand and product photography" },
+        { src: "images/LB-8.jpg", alt: "Lapis Bard brand and product photography" }
+      ]
+    }
+  },
+  {
+    id: "william-penn-ecommerce-store",
+    title: "William Penn Ecommerce Store",
+    category: "E-Commerce",
+    tags: ["Magento", "UX Design", "UI Design", "Content Creation", "Figma"],
+    client: "William Penn",
+    role: "UX/UI Designer & Creative Lead",
+    gradient: "linear-gradient(135deg, #1a1200 0%, #3d2e00 50%, #7a5c1e 100%)",
+    video: "images/williampenn.mp4",
+    description: "End-to-end UX and design lead for the William Penn e-commerce store — from stakeholder discovery and audience research through wireframing, UI design, product photography coordination, content creation, and Magento development handoff.",
+    overview: "William Penn is a premium writing instruments retailer. The project involved understanding the unique pain points of writing instrument shoppers — from nib selection to ink compatibility — and translating those insights into a purchase experience that matched the considered, tactile nature of the products. The work spanned research, design, content, and cross-functional coordination through to launch.",
+    highlights: [
+      "Led stakeholder discovery sessions to define project scope and goals",
+      "Researched audience pain points specific to shopping for writing instruments online",
+      "Produced wireframes covering key shopping flows and product detail pages",
+      "Designed full UI with brand-aligned visual language and typography",
+      "Co-ordinated product photoshoots to ensure consistent, high-quality imagery",
+      "Created product content and copy for the catalogue",
+      "Collaborated with developers to implement the design in Magento",
+      "Designed web graphics and marketing assets for the storefront"
+    ],
+    tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator", "Magento", "Wireframing", "Content Creation", "Photography Direction"]
+  },
+  {
+    id: "legion-magazine-online-store",
+    title: "Legion Magazine Online Store",
+    category: "E-Commerce",
+    tags: ["WooCommerce", "PHP", "Elementor", "WordPress", "Figma"],
+    year: "2019 – Present",
+    client: "Canvet Publications Ltd.",
+    role: "Web Designer & Developer",
+    gradient: "linear-gradient(135deg, #0d1a10 0%, #1a3a20 50%, #9b6b2f 100%)",
+    video: "images/shoplm.mp4",
+    description: "Designed and developed the Legion Magazine online store from the ground up — handling UI design, build, implementation, and ongoing management of a full WooCommerce-powered e-commerce experience.",
+    overview: "The Legion Magazine Online Store serves as the primary retail and subscription destination for Canada's largest veterans' publication. Built on WooCommerce with a custom Elementor-based frontend, the store was designed to reflect the editorial quality of the brand while supporting practical commerce needs: product catalogues, subscription management, promotional campaigns, and data-driven performance reporting.",
+    highlights: [
+      "Designed and built the store from the ground up using Figma, Photoshop, WooCommerce, PHP, and Elementor",
+      "Manage ongoing product inventory, catalogue updates, and all creative assets",
+      "Research, evaluate, and integrate plugins including social login, customer reviews, and AutomateWoo",
+      "Implemented abandoned cart recovery emails and AutomateWoo-powered marketing workflows",
+      "Design and place promotional banners and campaign visuals aligned to editorial and marketing calendars",
+      "Monitor sales analytics and generate performance reports to support business decisions"
+    ],
+    tools: ["Figma", "Adobe Photoshop", "WooCommerce", "PHP", "Elementor", "WordPress", "AutomateWoo", "WCAG / AODA"]
+  },
+  {
     id: "canadas-ultimate-story",
     title: "Canada's Ultimate Story",
     category: "Corporate Website",

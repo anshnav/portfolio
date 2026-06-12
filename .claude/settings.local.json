@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 -c ':*)"
+      "Bash(python3 -c ':*)",
+      "Bash(git -C /Users/2018mac/Desktop/ankushkatoch.com remote -v)"
     ]
   }
 }

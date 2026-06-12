@@ -60,6 +60,17 @@ revealEls.forEach(el => observer.observe(el));
 
 
 // =============================================
+// PROJECT GRID — VIDEO HOVER PLAY
+// =============================================
+document.querySelectorAll('.project__video').forEach(video => {
+  const card = video.closest('.project__link');
+  if (!card) return;
+  card.addEventListener('mouseenter', () => video.play());
+  card.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
+});
+
+
+// =============================================
 // SMOOTH ACTIVE NAV LINK
 // =============================================
 const sections = document.querySelectorAll('section[id]');
