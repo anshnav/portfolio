@@ -13,24 +13,31 @@ window.addEventListener('scroll', () => {
 
 
 // =============================================
-// MOBILE NAV TOGGLE
+// MOBILE NAV OVERLAY
 // =============================================
-const navToggle = document.getElementById('navToggle');
-const navLinks  = document.querySelector('.nav__links');
+const navToggle  = document.getElementById('navToggle');
+const navOverlay = document.getElementById('navOverlay');
+const navClose   = document.getElementById('navClose');
 
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-  const isOpen = navLinks.classList.contains('open');
-  navToggle.setAttribute('aria-expanded', isOpen);
-  document.body.style.overflow = isOpen ? 'hidden' : '';
-});
+function openMobileNav() {
+  navOverlay.classList.add('open');
+  navOverlay.setAttribute('aria-hidden', 'false');
+  navToggle.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
 
-// Close mobile nav when a link is clicked
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    document.body.style.overflow = '';
-  });
+function closeMobileNav() {
+  navOverlay.classList.remove('open');
+  navOverlay.setAttribute('aria-hidden', 'true');
+  navToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+navToggle.addEventListener('click', openMobileNav);
+navClose.addEventListener('click', closeMobileNav);
+
+navOverlay.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', closeMobileNav);
 });
 
 

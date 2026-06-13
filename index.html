@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
 </head>
 <body>
 
@@ -33,6 +33,19 @@
       <span></span><span></span><span></span>
     </button>
   </nav>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <button class="nav-overlay__close" id="navClose" aria-label="Close menu">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-overlay__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#creative">Creative</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
   <!-- HERO -->
   <section class="hero" id="hero">
@@ -522,6 +535,6 @@
     <p>&copy; 2026 Ankush Katoch. All rights reserved.</p>
   </footer>
 
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
