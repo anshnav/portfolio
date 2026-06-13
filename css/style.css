@@ -969,8 +969,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 640px) {
   .nav {
-    background: rgba(245,241,234,0.97);
-    backdrop-filter: blur(12px);
+    background: rgba(245, 241, 234, 0.97);
     border-bottom: 1px solid var(--border);
     padding-top: 1rem;
     padding-bottom: 1rem;
